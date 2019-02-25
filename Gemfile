@@ -97,6 +97,8 @@ gem 'pdf-reader'
 # Breadcrumbs
 gem "gretel"
 
+gem 'font-awesome-sass'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

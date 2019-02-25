@@ -46,17 +46,27 @@ $(document).on('turbolinks:load', function () {
 		dots: true,
 		centerMode: true,
 		centerPadding: '60px',
-		slidesToShow: 3,
+		slidesToShow: 2,
 		// variableWidth: true,
-		// prevArrow: "<img class='slick-prev' src='/images/left_arrow.png'>",
-		// nextArrow: "<img class='slick-next' src='/images/right_arrow.png'>",
-		responsive: [{
+		prevArrow: "<i class='prev-slide fas fa-chevron-left'></i>",
+		nextArrow: "<i class='next-slide fas fa-chevron-right'></i>",
+		responsive: [
+			{
+				breakpoint: 960,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '60px',
+					slidesToShow: 1
+				}
+			},
+			{
 				breakpoint: 768,
 				settings: {
 					arrows: false,
 					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 3
+					centerPadding: '60px',
+					slidesToShow: 1
 				}
 			},
 			{
@@ -64,7 +74,7 @@ $(document).on('turbolinks:load', function () {
 				settings: {
 					arrows: false,
 					centerMode: true,
-					centerPadding: '40px',
+					centerPadding: '60px',
 					slidesToShow: 1
 				}
 			}

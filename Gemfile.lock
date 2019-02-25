@@ -428,6 +428,7 @@ DEPENDENCIES
   figaro
   flamegraph
   flex-slider-rails
+  font-awesome-sass
   gretel
   httmultiparty
   httparty

@@ -124,13 +124,15 @@ body {
 }
 
 .flexslider {
+	position: relative;
+
 	.slick-list.draggable {
-		width: 46.875rem;
+		width: 100%;
 	}
 
 	.item {
-		width: 200px;
-		height: 200px;
+		width: 99%;
+		height: 17.9rem;
 		background-color: red;
 		border-radius: 1.25rem;
 		opacity: 0.5;
@@ -138,6 +140,32 @@ body {
 
 	.slick-prev:before, .slick-next:before {
 		color: black;
+	}
+
+	.prev-slide {
+		position: absolute;
+		left: 9px;
+		top: 122px;
+		z-index: 100;
+		width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+		background: #fff;
+	    padding: 7px 11px;
+    	font-size: 25px;
+	}
+
+	.next-slide {
+		position: absolute;
+		right: 9px;
+		top: 122px;
+		z-index: 100;
+		width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+		background: #fff;
+	    padding: 7px 13px;
+    	font-size: 25px;
 	}
 }
 
@@ -152,6 +180,14 @@ body {
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+	// .item {
+	// 	width: 26.4rem !important;
+	// 	height: 17.9rem !important;
+	// 	background-color: red;
+	// 	border-radius: 1.25rem;
+	// 	opacity: 0.5;
+	// }
+
 	.form-promotion {
 		flex-direction: column;
 	}
@@ -162,6 +198,14 @@ body {
 }
 
 @media screen and (min-width: 60em) {
+	// .item {
+	// 	width: 28.8rem !important;
+	// 	height: 17.9rem !important;
+	// 	background-color: red;
+	// 	border-radius: 1.25rem;
+	// 	opacity: 0.5;
+	// }
+
 	.form-promotion {
 		flex-direction: row;
 	}
