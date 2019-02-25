@@ -70,11 +70,6 @@ $(document).on('turbolinks:load', function () {
 			}
 		]
 	});
-	// $('.flexslider').slick({
-	// 	slidesToShow: 3,
-	// 	dots:true,
-	// 	centerMode: true,
-	// });
 });
 
 function initializeActionsToggle() {
