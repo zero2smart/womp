@@ -48,8 +48,10 @@ $(document).on('turbolinks:load', function () {
 		centerPadding: '60px',
 		slidesToShow: 2,
 		// variableWidth: true,
-		prevArrow: "<i class='prev-slide fas fa-chevron-left'></i>",
-		nextArrow: "<i class='next-slide fas fa-chevron-right'></i>",
+		// prevArrow: "<i class='prev-slide fas fa-chevron-left'></i>",
+		// nextArrow: "<i class='next-slide fas fa-chevron-right'></i>",
+		prevArrow: "<image src='assets/back.svg' class='prev-slide' />",
+		nextArrow: "<image src='assets/right-arrow.svg' class='next-slide' />",
 		responsive: [
 			{
 				breakpoint: 960,
