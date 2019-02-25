@@ -1,13 +1,16 @@
+<% content_for :head do %>
+  <meta name="turbolinks-cache-control" content="no-cache">
+<% end %>
 <section class="js-slider slider">
 	<div class="slide dt js-hero-womp js-scheme-2 hero-womp relative ph6 tc tl-ns w-100 js-scheme-image" style="padding-top: 10rem; padding-bottom: 12rem;">
 		<div class="dtc">
 			<!-- spacer -->
 		</div>
 		<div class="db dtc center v-mid black w-100 w-60-m w-45-l relative z-2 js-scheme-text">
-			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px;">let’s create</h1>
+			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px; text-transform: none;">diy 3D Modeling</h1>
 			<p class="f6 fw4 lh-copy mt2 mb5 center ml0-ns" style="max-width: 17em; font-size: 14px;">watch your ideas come to life<br class="dn db-l"> with easy and affordable 3d services</p>
 			<div class="mv0">
-				<%= link_to "start a project", new_project_path, class: 'button secondary-button mr2 f6' %>
+				<%= link_to "START A PROJECT", new_project_path, class: 'button secondary-button mr2 f6', style: 'text-transform: none' %>
 			</div>
 		</div>
 		<div class="dtc">
@@ -19,10 +22,10 @@
 			<!-- spacer -->
 		</div>
 		<div class="db dtc center v-mid white w-100 w-60-m w-45-l relative z-2 js-scheme-text">
-			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px;">let’s create</h1>
+			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px; text-transform: none;">3D scan your world</h1>
 			<p class="f6 fw4 lh-copy mt2 mb5 center ml0-ns" style="max-width: 17em; font-size: 14px;">watch your ideas come to life<br class="dn db-l"> with easy and affordable 3d services</p>
 			<div class="mv0">
-				<%= link_to "start a project", new_project_path, class: 'button white-button mr2 f6' %>
+				<%= link_to "START A PROJECT", new_project_path, class: 'button white-button mr2 f6', style: 'text-transform: none' %>
 			</div>
 		</div>
 		<div class="dtc">
@@ -34,10 +37,10 @@
 			<!-- spacer -->
 		</div>
 		<div class="db dtc center v-mid black w-100 w-60-m w-45-l relative z-2 js-scheme-text">
-			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px;">let’s create</h1>
+			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px; text-transform: none;">diy 3D Modeling</h1>
 			<p class="f6 fw4 lh-copy mt2 mb5 center ml0-ns" style="max-width: 17em; font-size: 14px;">watch your ideas come to life<br class="dn db-l"> with easy and affordable 3d services</p>
 			<div class="mv0">
-				<%= link_to "start a project", new_project_path, class: 'button secondary-button mr2 f6' %>
+				<%= link_to "START A PROJECT", new_project_path, class: 'button secondary-button mr2 f6', style: 'text-transform: none' %>
 			</div>
 		</div>
 		<div class="dtc">
@@ -49,10 +52,10 @@
 			<!-- spacer -->
 		</div>
 		<div class="db dtc center v-mid white w-100 w-60-m w-45-l relative z-2 js-scheme-text">
-			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px;">let’s create</h1>
+			<h1 class="f3 fw7 lh-title mv0" style="font-size: 26px; text-transform: none;">3D scan your world</h1>
 			<p class="f6 fw4 lh-copy mt2 mb5 center ml0-ns" style="max-width: 17em; font-size: 14px;">watch your ideas come to life<br class="dn db-l"> with easy and affordable 3d services</p>
 			<div class="mv0">
-				<%= link_to "start a project", new_project_path, class: 'button white-button mr2 f6' %>
+				<%= link_to "START A PROJECT", new_project_path, class: 'button white-button mr2 f6', style: 'text-transform: none' %>
 			</div>
 		</div>
 		<div class="dtc">
@@ -73,7 +76,7 @@
 
 	<div class="dtc-l tc tl-l v-mid w-100 w-50-l">
 		<h2 class="f3 fw7 lh-title mv0">need a quick estimate?</h2>
-		<p class="f5 fw4 lh-copy measure-narrow-l mt2 mb0">take our quick quiz and get an idea of what your project will cost beginning to end</p>
+		<p class="f5 fw4 lh-copy measure-narrow-l mt2 mb0">take our quick quiz to find out your projects costs from beginning to end ;)</p>
 		<p class="f5 fw4 lh-copy measure-narrow-l mt2 mb5">zero files or experience required!</p>
 		<%= link_to "take quiz", new_quote_path, class: "button secondary-button" %>
 	</div>
@@ -118,7 +121,7 @@
 		</a>
 	</div>
 	<%#= link_to "see more materials", materials_path, class: 'button mt6 secondary-button' %>
-	<%= link_to "see our materials pdf", asset_path('materials.pdf'), class: 'button mt6 secondary-button', target: "_blank" %>
+	<%= link_to "SEE MATERIALS", asset_path('materials.pdf'), class: 'button mt6 secondary-button', style: 'text-transform: none', target: "_blank" %>
 </section>
 
 
@@ -128,7 +131,7 @@
 			<h2 class="f3 fw7 lh-title mv0">wondering where to start?</h2>
 			<p class="f5 fw4 lh-copy measure-narrow-l mt2 mb0">every project is different</p>
 			<p class="f5 fw4 lh-copy measure-narrow-l mt2 mb5">find out more about how to get exactly what you want</p>
-			<%= link_to "learn more", how_it_works_path, class: "button secondary-button" %>
+			<%= link_to "LEARN MORE", how_it_works_path, class: "button secondary-button", style: 'text-transform: none; float: right' %>
 		</div>
 	</div>
 	<div class="dtc-l tc v-mid w-100 w-50-l">
@@ -149,8 +152,29 @@
 	</div>
 	<div class="dtc-l tc v-mid w-100 w-50-l">
 		<div class="dib tc tl-l">
-			<h2 class="f3 fw7 lh-title mv0">examples</h2>
-			<%= link_to "see our examples pdf", asset_path('examples.pdf'), class: 'button mt6 secondary-button', target: "_blank" %>
+			<h2 class="f3 fw7 lh-title mv0">check out examples</h2>
+			<p class="f5 fw4 lh-copy measure-narrow-l mt2 mb0">click below to see our examples pdf</p>
+			<%= link_to "TAKE QUIZ", asset_path('examples.pdf'), class: 'button mt6 secondary-button', style: 'text-transform: none', target: "_blank" %>
 		</div>
 	</div>
 </section>
+
+<section class="center dt-l mw7 mv7 ph6 pv7 w-100 tc">
+	<div class="flexslider">
+		<div><div class="item" style="background: red"></div></div>
+		<div><div class="item" style="background: blue"></div></div>
+		<div><div class="item" style="background: green"></div></div>
+		<div><div class="item" style="background: red"></div></div>
+		<div><div class="item" style="background: blue"></div></div>
+		<div><div class="item" style="background: green"></div></div>
+	</div>
+</section>
+
+
+<form class="flex form-promotion">
+	<p class="f5 fw4 mb0 promotion-label">stay up to date on our latest product releases + promotions</p>
+	<div>
+		<input type="text" class="promotion-text" />
+		<button type="submit" class="promotion-submit b-ns">SUBMIT</button>
+	</div>
+</form>

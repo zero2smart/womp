@@ -1,8 +1,14 @@
-//*= require trix
+/*
+*= require trix
+*= require slick
+*= require slick-theme
+*/
+
 
 /* Tools */
 @import "shared/tools/variables";
 @import "shared/tools/mixins";
+
 
 /* Base */
 @import "shared/normalize.scss";

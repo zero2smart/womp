@@ -26,8 +26,14 @@ gem 'bootsnap', require: false
 # Browser Detection
 gem 'browser'
 
+gem 'flex-slider-rails'
+
 # Jquery UI
 gem 'jquery-ui-rails'
+
+gem 'jquery-rails'
+
+gem "jquery-slick-rails"
 
 # WYSIWYG
 gem 'trix'

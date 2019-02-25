@@ -12,13 +12,15 @@
 //
 //= require rails-ujs
 //= require jquery
+//= require jquery_ujs
+//= require jquery.slick
 //= require ./shared/three
 //= require turbolinks
 //= require trix
 //= require_tree ./shared
 //= require_tree ./application
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbolinks:load', function () {
 	// initializeGlobalFunctions(); // in global-functions.js
 	// initializeJSAutoSubmit();
 	// initializeModals();
@@ -39,10 +41,44 @@ $(document).on('turbolinks:load', function() {
 	initializeModals(); // in shared/shared.js
 
 	// direct upload is handled in the webpacker files
+
+	$('.flexslider').slick({
+		dots: true,
+		centerMode: true,
+		centerPadding: '60px',
+		slidesToShow: 3,
+		// variableWidth: true,
+		// prevArrow: "<img class='slick-prev' src='/images/left_arrow.png'>",
+		// nextArrow: "<img class='slick-next' src='/images/right_arrow.png'>",
+		responsive: [{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	// $('.flexslider').slick({
+	// 	slidesToShow: 3,
+	// 	dots:true,
+	// 	centerMode: true,
+	// });
 });
 
 function initializeActionsToggle() {
-	$(document).click(function(e) {
+	$(document).click(function (e) {
 		var clickover = $(e.target);
 
 		$('.js-dropdown-content').hide();
@@ -64,7 +100,7 @@ function initializePolling() {
 			url = '/uploads/' + uploadId + '/upload_ready';
 			$.get({
 				url: url,
-				success: function(data) {
+				success: function (data) {
 					if (data.ready) {
 						window.location.reload();
 					}
@@ -81,7 +117,9 @@ function initializeZoom() {
 		.wrap('<span style="display:inline-block;"></span>')
 		.css('display', 'block')
 		.parent()
-		.zoom({magnify: 1.5});
+		.zoom({
+			magnify: 1.5
+		});
 }
 
 // function initializeModals() {
